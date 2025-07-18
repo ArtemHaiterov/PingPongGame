@@ -17,7 +17,6 @@ class PINGPONG_API APlayerPaddleController : public APlayerController
 protected:
     virtual void SetupInputComponent() override;
     virtual void BeginPlayingState() override;
-    virtual void BeginPlay() override;
     void MoveRight(float Value);
     void CreateAndShowScoreWidget();
 
