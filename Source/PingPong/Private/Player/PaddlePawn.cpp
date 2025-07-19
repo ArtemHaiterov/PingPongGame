@@ -16,7 +16,7 @@ APaddlePawn::APaddlePawn()
     PaddleMesh->SetupAttachment(Root);
     FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
     FollowCamera->SetupAttachment(Root);
-    SetReplicates(true);
+    bReplicates = true;
     SetReplicatingMovement(true);
 }
 

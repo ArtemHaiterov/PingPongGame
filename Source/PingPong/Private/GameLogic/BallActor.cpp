@@ -8,7 +8,7 @@ ABallActor::ABallActor()
 
     BallMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BallMesh"));
     SetRootComponent(BallMesh);
-    SetReplicates(true);
+    bReplicates = true;
     SetReplicatingMovement(true);
     BallMesh->BodyInstance.bLockZTranslation = true;
     BallMesh->SetSimulatePhysics(true);

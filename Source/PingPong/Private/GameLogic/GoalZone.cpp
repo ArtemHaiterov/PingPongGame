@@ -15,7 +15,7 @@ AGoalZone::AGoalZone()
     SetRootComponent(TriggerBox);
     TriggerBox->SetCollisionProfileName(TEXT("Trigger"));
     TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &AGoalZone::OnOverlapBegin);
-    SetReplicates(true);
+    bReplicates = true;
 }
 
 void AGoalZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
